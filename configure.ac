@@ -13,8 +13,8 @@ AM_PROG_AR
 LT_INIT
 
 AC_ARG_WITH([moduledir], AS_HELP_STRING([--with-moduledir=PATH],
-            [Path where PAM modules are to be installed [[/lib/security]]]),
-            [moduledir="$withval"], [moduledir="/lib/security"])
+            [Path where PAM modules are to be installed [[/lib64/security]]]),
+            [moduledir="$withval"], [moduledir="/lib64/security"])
 AC_SUBST(moduledir)
 
 AC_CHECK_HEADERS([security/pam_modules.h], [have_pamheader="yes"])
